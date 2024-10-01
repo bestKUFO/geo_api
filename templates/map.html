@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Multiple Addresses to Map</title>
+  </head>
+  <body>
+
+    <div id="map">
+      {% if map_html %}
+        {{ map_html | safe }}
+      {% else %}
+        <p>지도 데이터를 불러오지 못함</p>
+      {% endif %}
+    </div>
+  </body>
+</html>
